@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mapper namespace="plc.mappers.UserInfoMapper">
+  <select id="selectById">
+    SELECT id, Config
+    FROM mk_plc.plc_config_info
+    WHERE id = @id
+  </select>
+</mapper>
